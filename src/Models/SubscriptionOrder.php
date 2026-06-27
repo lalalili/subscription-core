@@ -27,6 +27,7 @@ class SubscriptionOrder extends Model
         return [
             'billing_cycle' => BillingCycle::class,
             'payment_status' => PaymentStatus::class,
+            'period_sequence' => 'integer',
             'payment_time' => 'datetime',
         ];
     }

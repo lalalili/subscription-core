@@ -18,6 +18,12 @@ use Lalalili\SubscriptionCore\Enums\SubscriptionStatus;
  * @property int|float|string $price
  * @property SubscriptionStatus|string $status
  * @property bool $is_internal
+ * @property bool $is_recurring
+ * @property string|null $gwsr
+ * @property int $total_success_times
+ * @property int $failed_charge_count
+ * @property string|null $recurring_period_type
+ * @property int|null $recurring_exec_times
  * @property Carbon|null $expires_at
  */
 class Subscription extends Model
@@ -38,6 +44,10 @@ class Subscription extends Model
             'billing_cycle' => BillingCycle::class,
             'status' => SubscriptionStatus::class,
             'is_internal' => 'boolean',
+            'is_recurring' => 'boolean',
+            'total_success_times' => 'integer',
+            'failed_charge_count' => 'integer',
+            'recurring_exec_times' => 'integer',
             'starts_at' => 'datetime',
             'expires_at' => 'datetime',
             'cancelled_at' => 'datetime',

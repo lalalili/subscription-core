@@ -25,6 +25,8 @@ class SubscriptionCoreServiceProvider extends PackageServiceProvider
                 '2026_02_14_011815_create_merchant_subscriptions_table',
                 '2026_02_14_011826_create_subscription_orders_table',
                 '2026_05_08_111746_add_internal_fields_to_merchant_subscriptions_table',
+                '2026_06_27_000000_add_recurring_fields_to_subscription_tables',
+                '2026_06_27_000001_add_failed_charge_count_to_merchant_subscriptions_table',
             ]);
     }
 

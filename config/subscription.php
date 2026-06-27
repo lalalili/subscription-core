@@ -46,4 +46,9 @@ return [
             'recommendation.monthly_api_calls',
         ],
     ],
+
+    'recurring' => [
+        // 連續扣款失敗達此次數即視為終止（對齊綠界定期定額連續失敗 6 次自動終止合約）。
+        'failure_termination_threshold' => 6,
+    ],
 ];
